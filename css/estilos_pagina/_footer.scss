@@ -1,0 +1,75 @@
+#footer{
+	background:$color2;
+	margin-top:2em;
+}
+
+.informacion__title{
+	text-align:center;
+	color:$color5;
+	font-family:$fuente_body;
+	margin-bottom:16px;
+}
+
+.informacion__description{
+	text-align:center;
+	color:darken(#616161,1);
+	font-family:$fuente_body;
+}
+
+.contacto{
+	text-align:center;
+	font-family:$fuente_body;
+	line-height:1;
+	color:#616161;
+	span{
+		color:$color3;
+		position:relative;
+		right:5px;
+	}
+}
+
+.sociales{
+	margin-top:6px;
+	text-align:center;
+	margin-bottom:20px;
+
+	&__item{
+		display:inline-block;
+		font-size:1.4em;
+		width:43px;
+		height:45px;
+		margin:2px;
+		padding:.4em .4em .4em .4em;
+		border-radius:50%; 
+		color:$color5;
+	}
+
+	.icon-facebook{
+		background:#5E74C2;
+	}
+	.icon-twitter{
+		background:#56B6E7;
+	}
+	.icon-pinterest{
+		background:#DD3C48;
+	}
+
+	.icon-github{
+		background:rgba(#BDBDBD,.3);
+	}
+
+	.icon-instagram{
+		background:#A1887F;
+	}
+}
+
+.creditos{
+	background:$color1;
+
+	p{
+		text-align:center;
+		padding:.5em;
+		color:#616161;
+		opacity:.7;
+	}
+}

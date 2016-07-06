@@ -1,0 +1,42 @@
+#servicios{
+	padding-top:1em;
+	background:#F8F8F8;
+	padding-bottom:3em;
+	
+	@include desde(tablet){
+		padding-top:3em;
+	}
+
+
+}
+
+.servicio{
+	text-align:center;
+	margin:2%;
+	
+	&__icono{
+		font-size:2.7em;
+		color:darken($color5,20);
+
+		@include desde(web){
+			font-size:4em;
+		}
+	}
+
+	&__title{
+		font-family:$fuente_body;
+		color:#616161;
+		font-size:1.4em;
+		margin-bottom:5px;
+
+		@include desde(web){
+			margin-top:30px;
+		}
+	}
+
+	&__description{
+		font-size:.85em;
+		font-family:$fuente_body;
+		color:#616161;
+	}
+}

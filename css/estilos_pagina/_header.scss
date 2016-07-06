@@ -1,0 +1,172 @@
+#header{
+	background:$color2;
+}
+
+.logo_menu{
+	background:$color1;
+}
+
+.logo{
+	text-align:center;
+	font-size:2.6em;
+	color:#fff;
+	font-family:$fuente_header;
+	margin-bottom:15px;
+	color:$color5;
+	span{
+		&:before{
+			color:$color3;
+			transform:rotate(180deg);	
+		}
+	}
+
+	@include desde(web){
+		font-size:1.5em;
+		text-align:left;
+		position:relative;
+		top:2px;
+		text-transform:translate(-2px);
+	}
+}
+
+.menu-bar{
+	background:$color3;
+	padding-left:1em;
+	line-height:2.3;
+	border-bottom:1px solid $color1;
+	border-radius:.2em .2em 0 0;
+	.bt-menu{
+		color:$color2;
+		font-size:1.2em;
+		font-family:$fuente_body;
+	}
+	
+	span{
+		float:right;
+		position:relative;
+		right:10px;
+		top:2px;
+	}
+
+	@include desde(web){
+		display:none;
+	}
+}
+
+.menu{
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+
+	@include hasta(web){
+		background:$color3;
+	}
+	
+	@include desde(web){
+		display:block;
+		position:relative;
+		top:1em;
+		transform:translate(-1em);
+		float:right;
+	}
+
+	&__item{
+		border-bottom:1px solid $color1;
+		padding-left:1em;
+		line-height:2.3;
+		
+		@include desde(web){
+			display:inline-block;
+			border-bottom:none;
+		}
+	}
+
+	&__link{
+		color:$color2;
+		text-transform:uppercase;
+		font-family:$fuente_body;
+		transition:.5s all;
+		font-weight:bold;
+
+		@include desde(web){
+			color:$color5;
+
+			&:hover{
+				color:$color3;
+			}
+		}
+	}
+}
+
+
+.banner{
+	margin-bottom:2em;
+
+	@include desde(web){
+		margin-bottom:4em;
+	}
+	
+	&__title{
+		text-align:center;
+		font-size:2em;
+		font-family:$fuente_body;
+		font-weight:300;
+		color:$color5;
+		margin-bottom:10px;
+		span{
+			font-size:1.1em;
+			font-weight:800;
+		}
+
+		@include desde(web){
+			font-size:3.5em;
+			font-weight:200;
+			padding:.5em;
+			letter-spacing:-0.8px;
+			span{
+				font-size:1.1em;
+			}
+		}
+	}
+
+	&__description{
+		font-size:.95em;
+		text-align:center;
+		color:$color5;
+		opacity:.8;
+		span{
+			font-family:$fuente_header;
+		}
+
+		@include desde(web){
+			font-size:2.3em;
+			margin-top:10px;
+			font-weight:100;
+		}
+	}
+
+	&__button{
+		display:block;
+		text-align:center;
+		color:$color5;
+		background:rgba($color3,2);
+		width:140px;
+		margin:auto;
+		text-transform:uppercase;
+		font-family:$fuente_body;
+		font-weight:600;
+		font-size:.85em;
+		padding:.7em .9em .7em .9em;
+		border-radius:.3em;
+
+		@include desde(web){
+			transition:.5s all;
+			&:hover{
+				background:darken(#616161,9);
+			}
+		}
+	}
+}
+
+
